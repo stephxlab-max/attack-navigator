@@ -1,1 +1,67 @@
-[]
+{
+  "name": "Reconnaissance en Rose (Corrigé)",
+  "description": "Coloration rose pour toutes les techniques de la tactique Reconnaissance.",
+  "domain": "enterprise-attack",
+  "version": "4.5",
+  "techniques": [
+    {
+      "techniqueID": "T1592",
+      "color": "#FF69B4"
+    },
+    {
+      "techniqueID": "T1590",
+      "color": "#FF69B4"
+    },
+    {
+      "techniqueID": "T1591",
+      "color": "#FF69B4"
+    },
+    {
+      "techniqueID": "T1598",
+      "color": "#FF69B4"
+    },
+    {
+      "techniqueID": "T1589",
+      "color": "#FF69B4"
+    },
+    {
+      "techniqueID": "T1594",
+      "color": "#FF69B4"
+    },
+    {
+      "techniqueID": "T1597",
+      "color": "#FF69B4"
+    },
+    {
+      "techniqueID": "T1595",
+      "color": "#FF69B4"
+    },
+    {
+      "techniqueID": "T1596",
+      "color": "#FF69B4"
+    },
+    {
+      "techniqueID": "T1593",
+      "color": "#FF69B4"
+    }
+  ],
+  "tactic_controls": {
+    "TA0043": {
+      "color": "#FF69B4"
+    }
+  },
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#ff69b4"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Reconnaissance (TA0043)",
+      "color": "#FF69B4"
+    }
+  ]
+}
