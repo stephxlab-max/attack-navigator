@@ -1,67 +1,188 @@
 {
-  "name": "Reconnaissance en Rose (Corrigé)",
-  "description": "Coloration rose pour toutes les techniques de la tactique Reconnaissance.",
+  "name": "Couverture actuelle - atterrissage (2025)",
+  "description": "État déclaratif 2025 (réaliste). Légende: Bloqué=#2ECC71, Détecté=#FFA500, Mitigée=#FFD700, Non couvert=#FF0000, Non évalué=#C0C0C0.",
   "domain": "enterprise-attack",
   "version": "4.5",
   "techniques": [
-    {
-      "techniqueID": "T1592",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1590",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1591",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1598",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1589",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1594",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1597",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1595",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1596",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1593",
-      "color": "#FF69B4"
-    }
+    {"techniqueID":"T1595","color":"#FFA500"},
+    {"techniqueID":"T1592","color":"#FFA500"},
+    {"techniqueID":"T1589","color":"#FFA500"},
+    {"techniqueID":"T1590","color":"#FF0000"},
+    {"techniqueID":"T1591","color":"#FF0000"},
+    {"techniqueID":"T1598","color":"#FFD700"},
+    {"techniqueID":"T1597","color":"#FF0000"},
+    {"techniqueID":"T1596","color":"#FF0000"},
+    {"techniqueID":"T1593","color":"#FF0000"},
+    {"techniqueID":"T1594","color":"#FFA500"},
+
+    {"techniqueID":"T1650","color":"#FFD700"},
+    {"techniqueID":"T1583","color":"#FFA500"},
+    {"techniqueID":"T1586","color":"#FFA500"},
+    {"techniqueID":"T1584","color":"#FFD700"},
+    {"techniqueID":"T1587","color":"#FF0000"},
+    {"techniqueID":"T1585","color":"#FFA500"},
+    {"techniqueID":"T1588","color":"#FFD700"},
+    {"techniqueID":"T1608","color":"#FF0000"},
+
+    {"techniqueID":"T1659","color":"#C0C0C0"},
+    {"techniqueID":"T1189","color":"#FFA500"},
+    {"techniqueID":"T1190","color":"#FFA500"},
+    {"techniqueID":"T1133","color":"#FFA500"},
+    {"techniqueID":"T1200","color":"#C0C0C0"},
+    {"techniqueID":"T1566","color":"#FFD700"},
+    {"techniqueID":"T1091","color":"#FFA500"},
+    {"techniqueID":"T1195","color":"#FF0000"},
+    {"techniqueID":"T1199","color":"#FFD700"},
+    {"techniqueID":"T1078","color":"#FFA500"},
+    {"techniqueID":"T1669","color":"#C0C0C0"},
+
+    {"techniqueID":"T1651","color":"#C0C0C0"},
+    {"techniqueID":"T1059","color":"#2ECC71"},
+    {"techniqueID":"T1609","color":"#C0C0C0"},
+    {"techniqueID":"T1610","color":"#C0C0C0"},
+    {"techniqueID":"T1675","color":"#C0C0C0"},
+    {"techniqueID":"T1203","color":"#FFD700"},
+    {"techniqueID":"T1674","color":"#C0C0C0"},
+    {"techniqueID":"T1559","color":"#C0C0C0"},
+    {"techniqueID":"T1106","color":"#2ECC71"},
+    {"techniqueID":"T1053","color":"#FFA500"},
+    {"techniqueID":"T1648","color":"#C0C0C0"},
+    {"techniqueID":"T1129","color":"#FFA500"},
+    {"techniqueID":"T1072","color":"#FFA500"},
+    {"techniqueID":"T1569","color":"#C0C0C0"},
+    {"techniqueID":"T1204","color":"#2ECC71"},
+    {"techniqueID":"T1047","color":"#2ECC71"},
+
+    {"techniqueID":"T1098","color":"#FFA500"},
+    {"techniqueID":"T1197","color":"#C0C0C0"},
+    {"techniqueID":"T1547","color":"#C0C0C0"},
+    {"techniqueID":"T1037","color":"#C0C0C0"},
+    {"techniqueID":"T1671","color":"#C0C0C0"},
+    {"techniqueID":"T1554","color":"#C0C0C0"},
+    {"techniqueID":"T1136","color":"#FFA500"},
+    {"techniqueID":"T1543","color":"#FFD700"},
+    {"techniqueID":"T1546","color":"#FFA500"},
+    {"techniqueID":"T1668","color":"#C0C0C0"},
+    {"techniqueID":"T1133","color":"#FFA500"},
+    {"techniqueID":"T1574","color":"#C0C0C0"},
+    {"techniqueID":"T1525","color":"#C0C0C0"},
+    {"techniqueID":"T1556","color":"#C0C0C0"},
+    {"techniqueID":"T1112","color":"#C0C0C0"},
+    {"techniqueID":"T1137","color":"#C0C0C0"},
+    {"techniqueID":"T1653","color":"#C0C0C0"},
+    {"techniqueID":"T1542","color":"#C0C0C0"},
+    {"techniqueID":"T1505","color":"#C0C0C0"},
+    {"techniqueID":"T1176","color":"#C0C0C0"},
+    {"techniqueID":"T1205","color":"#C0C0C0"},
+    {"techniqueID":"T1078","color":"#FFA500"},
+
+    {"techniqueID":"T1548","color":"#FFA500"},
+    {"techniqueID":"T1134","color":"#FFA500"},
+    {"techniqueID":"T1098","color":"#FFA500"},
+    {"techniqueID":"T1547","color":"#C0C0C0"},
+    {"techniqueID":"T1037","color":"#C0C0C0"},
+    {"techniqueID":"T1543","color":"#FFD700"},
+    {"techniqueID":"T1484","color":"#C0C0C0"},
+    {"techniqueID":"T1611","color":"#C0C0C0"},
+    {"techniqueID":"T1546","color":"#FFA500"},
+    {"techniqueID":"T1068","color":"#FFD700"},
+    {"techniqueID":"T1574","color":"#C0C0C0"},
+    {"techniqueID":"T1055","color":"#2ECC71"},
+    {"techniqueID":"T1036","color":"#FFA500"},
+    {"techniqueID":"T1078","color":"#FFA500"},
+
+    {"techniqueID":"T1622","color":"#C0C0C0"},
+    {"techniqueID":"T1140","color":"#C0C0C0"},
+    {"techniqueID":"T1610","color":"#C0C0C0"},
+    {"techniqueID":"T1006","color":"#C0C0C0"},
+    {"techniqueID":"T1484","color":"#C0C0C0"},
+    {"techniqueID":"T1672","color":"#C0C0C0"},
+    {"techniqueID":"T1480","color":"#C0C0C0"},
+    {"techniqueID":"T1211","color":"#C0C0C0"},
+    {"techniqueID":"T1222","color":"#C0C0C0"},
+    {"techniqueID":"T1564","color":"#C0C0C0"},
+    {"techniqueID":"T1562","color":"#C0C0C0"},
+    {"techniqueID":"T1656","color":"#C0C0C0"},
+    {"techniqueID":"T1070","color":"#FFA500"},
+    {"techniqueID":"T1036","color":"#FFA500"},
+    {"techniqueID":"T1578","color":"#C0C0C0"},
+    {"techniqueID":"T1666","color":"#C0C0C0"},
+    {"techniqueID":"T1601","color":"#C0C0C0"},
+    {"techniqueID":"T1599","color":"#C0C0C0"},
+    {"techniqueID":"T1027","color":"#C0C0C0"},
+    {"techniqueID":"T1014","color":"#C0C0C0"},
+    {"techniqueID":"T1553","color":"#C0C0C0"},
+    {"techniqueID":"T1218","color":"#C0C0C0"},
+    {"techniqueID":"T1221","color":"#C0C0C0"},
+    {"techniqueID":"T1127","color":"#FFA500"},
+    {"techniqueID":"T1550","color":"#FFD700"},
+    {"techniqueID":"T1497","color":"#C0C0C0"},
+    {"techniqueID":"T1600","color":"#C0C0C0"},
+    {"techniqueID":"T1220","color":"#C0C0C0"},
+
+    {"techniqueID":"T1110","color":"#FFA500"},
+    {"techniqueID":"T1212","color":"#FFD700"},
+    {"techniqueID":"T1056","color":"#FFA500"},
+    {"techniqueID":"T1040","color":"#FF0000"},
+    {"techniqueID":"T1003","color":"#2ECC71"},
+    {"techniqueID":"T1558","color":"#FFA500"},
+    {"techniqueID":"T1539","color":"#FFD700"},
+    {"techniqueID":"T1552","color":"#FFA500"},
+
+    {"techniqueID":"T1087","color":"#FFA500"},
+    {"techniqueID":"T1526","color":"#FFD700"},
+    {"techniqueID":"T1083","color":"#FFA500"},
+    {"techniqueID":"T1046","color":"#FF0000"},
+    {"techniqueID":"T1135","color":"#FFA500"},
+    {"techniqueID":"T1018","color":"#FF0000"},
+    {"techniqueID":"T1012","color":"#FFA500"},
+    {"techniqueID":"T1018","color":"#FF0000"},
+    {"techniqueID":"T1518","color":"#FFA500"},
+    {"techniqueID":"T1082","color":"#FFA500"},
+    {"techniqueID":"T1082","color":"#FFA500"},
+    {"techniqueID":"T1016","color":"#C0C0C0"},
+    {"techniqueID":"T1049","color":"#C0C0C0"},
+
+    {"techniqueID":"T1210","color":"#FFD700"},
+    {"techniqueID":"T1534","color":"#FFA500"},
+    {"techniqueID":"T1570","color":"#FFA500"},
+    {"techniqueID":"T1021","color":"#FFA500"},
+    {"techniqueID":"T1091","color":"#FFA500"},
+    {"techniqueID":"T1072","color":"#FFA500"},
+    {"techniqueID":"T1550","color":"#FFA500"},
+
+    {"techniqueID":"T1115","color":"#FFA500"},
+    {"techniqueID":"T1213","color":"#FFD700"},
+    {"techniqueID":"T1005","color":"#FFA500"},
+    {"techniqueID":"T1039","color":"#FFA500"},
+    {"techniqueID":"T1025","color":"#FFA500"},
+    {"techniqueID":"T1074","color":"#FFA500"},
+    {"techniqueID":"T1056","color":"#FFA500"},
+    {"techniqueID":"T1113","color":"#FFA500"},
+
+    {"techniqueID":"T1071","color":"#FFD700"},
+    {"techniqueID":"T1095","color":"#FF0000"},
+    {"techniqueID":"T1090","color":"#FF0000"},
+    {"techniqueID":"T1102","color":"#FFD700"},
+
+    {"techniqueID":"T1020","color":"#FFA500"},
+    {"techniqueID":"T1048","color":"#FF0000"},
+    {"techniqueID":"T1041","color":"#FFD700"},
+    {"techniqueID":"T1052","color":"#FFA500"},
+    {"techniqueID":"T1567","color":"#FFD700"},
+    {"techniqueID":"T1537","color":"#FFD700"},
+
+    {"techniqueID":"T1486","color":"#FFD700"},
+    {"techniqueID":"T1491","color":"#FFA500"},
+    {"techniqueID":"T1490","color":"#FFA500"},
+    {"techniqueID":"T1496","color":"#FFA500"},
+    {"techniqueID":"T1489","color":"#FFA500"}
   ],
-  "tactic_controls": {
-    "TA0043": {
-      "color": "#FF69B4"
-    }
-  },
-  "gradient": {
-    "colors": [
-      "#ffffff",
-      "#ff69b4"
-    ],
-    "minValue": 0,
-    "maxValue": 1
-  },
   "legendItems": [
-    {
-      "label": "Reconnaissance (TA0043)",
-      "color": "#FF69B4"
-    }
+    {"label":"Bloqué","color":"#2ECC71"},
+    {"label":"Détecté","color":"#FFA500"},
+    {"label":"Mitigée","color":"#FFD700"},
+    {"label":"Non couvert","color":"#FF0000"},
+    {"label":"Non évalué","color":"#C0C0C0"}
   ]
 }
