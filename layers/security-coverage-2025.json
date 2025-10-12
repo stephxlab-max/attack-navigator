@@ -1,10 +1,9 @@
 {
-  "name": "Couverture actuelle - SOC (Sekoia, SentinelOne, Fortinet WAF, FortiMail, Azure AD/MFA, Veeam, BitLocker/USB partiels)",
-  "description": "Layer basé sur le déclaratif validé. Légende: Bloqué=#2ECC71, Détecté=#FFA500, Mitigée=#FFD700, Non couvert=#FF0000.",
+  "name": "Couverture actuelle - SOC (Sekoia, SentinelOne, Fortinet, FortiMail, Azure AD, Veeam, BitLocker partiel)",
+  "description": "État déclaratif 2025. Légende: Bloqué=#2ECC71, Détecté=#FFA500, Mitigée=#FFD700, Non couvert=#FF0000.",
   "domain": "enterprise-attack",
   "version": "4.5",
   "techniques": [
-    /* Reconnaissance (TA0043) */
     {"techniqueID": "T1595", "color": "#FFA500"},
     {"techniqueID": "T1592", "color": "#FFA500"},
     {"techniqueID": "T1589", "color": "#FFA500"},
@@ -14,8 +13,6 @@
     {"techniqueID": "T1596", "color": "#FF0000"},
     {"techniqueID": "T1593", "color": "#FF0000"},
     {"techniqueID": "T1597", "color": "#FF0000"},
-
-    /* Resource Development (TA0042) */
     {"techniqueID": "T1583", "color": "#FFA500"},
     {"techniqueID": "T1585", "color": "#FFA500"},
     {"techniqueID": "T1587", "color": "#FF0000"},
@@ -24,15 +21,11 @@
     {"techniqueID": "T1586", "color": "#FFA500"},
     {"techniqueID": "T1608", "color": "#FF0000"},
     {"techniqueID": "T1650", "color": "#FFD700"},
-
-    /* Initial Access (TA0001) */
     {"techniqueID": "T1566", "color": "#FFD700"},
     {"techniqueID": "T1190", "color": "#FFA500"},
     {"techniqueID": "T1189", "color": "#FFA500"},
     {"techniqueID": "T1133", "color": "#FFA500"},
     {"techniqueID": "T1078", "color": "#FFA500"},
-
-    /* Execution (TA0002) */
     {"techniqueID": "T1059", "color": "#2ECC71"},
     {"techniqueID": "T1106", "color": "#2ECC71"},
     {"techniqueID": "T1129", "color": "#FFA500"},
@@ -41,14 +34,10 @@
     {"techniqueID": "T1055", "color": "#2ECC71"},
     {"techniqueID": "T1203", "color": "#FFD700"},
     {"techniqueID": "T1127", "color": "#FFA500"},
-
-    /* Credential Access (TA0006) */
     {"techniqueID": "T1110", "color": "#FFA500"},
     {"techniqueID": "T1003", "color": "#2ECC71"},
     {"techniqueID": "T1539", "color": "#FFD700"},
     {"techniqueID": "T1550", "color": "#FFD700"},
-
-    /* Discovery (TA0007) */
     {"techniqueID": "T1046", "color": "#FF0000"},
     {"techniqueID": "T1082", "color": "#FFA500"},
     {"techniqueID": "T1087", "color": "#FFA500"},
@@ -57,23 +46,12 @@
     {"techniqueID": "T1083", "color": "#FFA500"},
     {"techniqueID": "T1069", "color": "#FFA500"},
     {"techniqueID": "T1518", "color": "#FFA500"},
-
-    /* Lateral Movement (TA0008) */
-    /* (IDs non détaillés ici pour éviter erreur : RDP/SMB/WinRM/SSH/PSExec/WMI couverts en Détecté/Bloqué côté hôte) */
-
-    /* Collection (TA0009) - exemples représentés par détections host-side = Détecté */
-
-    /* Exfiltration (TA0010) */
     {"techniqueID": "T1041", "color": "#FFD700"},
-
-    /* Command and Control (TA0011) — application-layer vs non-app-layer */
-    {"techniqueID": "T1071", "color": "#FFD700"},  /* Application Layer Protocol (HTTP/S) */
-    {"techniqueID": "T1095", "color": "#FF0000"},  /* Non-Application Layer Protocol (ex. ICMP) */
-    {"techniqueID": "T1090", "color": "#FF0000"},  /* Proxy */
-    {"techniqueID": "T1102", "color": "#FFD700"},  /* Web Service */
-
-    /* Impact (TA0040) */
-    {"techniqueID": "T1486", "color": "#FFD700"}   /* Data Encrypted for Impact */
+    {"techniqueID": "T1071", "color": "#FFD700"},
+    {"techniqueID": "T1095", "color": "#FF0000"},
+    {"techniqueID": "T1090", "color": "#FF0000"},
+    {"techniqueID": "T1102", "color": "#FFD700"},
+    {"techniqueID": "T1486", "color": "#FFD700"}
   ],
   "legendItems": [
     {"label": "Bloqué", "color": "#2ECC71"},
