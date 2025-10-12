@@ -1,67 +1,53 @@
 {
-  "name": "Reconnaissance en Rose (Corrigé)",
-  "description": "Coloration rose pour toutes les techniques de la tactique Reconnaissance.",
+  "name": "Couverture cible 2026 - après investissements (NDR, DLP, Patch, Pentera, CTI, BitLocker/USB)",
+  "description": "Simulation de la couverture après mise en œuvre 2026. Légende: Bloqué=#2ECC71, Détecté=#FFA500, Mitigée=#FFD700, Non couvert=#FF0000.",
   "domain": "enterprise-attack",
   "version": "4.5",
   "techniques": [
-    {
-      "techniqueID": "T1592",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1590",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1591",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1598",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1589",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1594",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1597",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1595",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1596",
-      "color": "#FF69B4"
-    },
-    {
-      "techniqueID": "T1593",
-      "color": "#FF69B4"
-    }
+    /* Reconnaissance (TA0043) – ajout CTI dark-web & DNS logging => certaines OSINT/closed passent en Détecté */
+    {"techniqueID": "T1596", "color": "#FFA500"},
+    {"techniqueID": "T1593", "color": "#FFA500"},
+    {"techniqueID": "T1597", "color": "#FFA500"},
+    {"techniqueID": "T1590", "color": "#FFA500"},
+
+    /* Resource Development (TA0042) – meilleure veille + logs proxy/DNS */
+    {"techniqueID": "T1587", "color": "#FFA500"},  /* Non couvert -> Détecté (veille/dev repos) */
+    {"techniqueID": "T1608", "color": "#FFD700"},  /* Non couvert -> Mitigée (staging observable via proxy/NDR) */
+    {"techniqueID": "T1650", "color": "#FFA500"},  /* Mitigée -> Détecté (feeds leaks + corrélation) */
+
+    /* Initial Access (TA0001) – sandbox mail + patch mgmt */
+    {"techniqueID": "T1566", "color": "#2ECC71"},  /* Mitigée -> Bloqué (mail sandbox + policies) */
+    {"techniqueID": "T1190", "color": "#2ECC71"},  /* Détecté -> Bloqué (patch mgmt + WAF tuning) */
+
+    /* Execution (TA0002) – déjà fort (S1 prevention), rien à changer majeur ici */
+
+    /* Credential Access (TA0006) – durci LSASS/secret scanning */
+    {"techniqueID": "T1539", "color": "#FFA500"},  /* Mitigée -> Détecté (secret scanning/DLP) */
+    {"techniqueID": "T1550", "color": "#FFA500"},  /* Mitigée -> Détecté (CA policies + corrélation) */
+
+    /* Discovery (TA0007) – NDR + cloud audit */
+    {"techniqueID": "T1046", "color": "#FFA500"},  /* Non couvert -> Détecté (flows/NDR) */
+    {"techniqueID": "T1018", "color": "#FFA500"},  /* Non couvert -> Détecté (NDR visibilité) */
+    {"techniqueID": "T1526", "color": "#FFA500"},  /* Mitigée -> Détecté (CSPM/Audit cloud) */
+
+    /* Exfiltration (TA0010) – DLP + proxy/DNS + NDR */
+    {"techniqueID": "T1041", "color": "#2ECC71"},  /* Mitigée -> Bloqué (DLP + NDR + proxy rules) */
+    {"techniqueID": "T1567", "color": "#2ECC71"},  /* Exfiltration Over Web Service (DLP cloud) */
+    {"techniqueID": "T1048", "color": "#FFA500"},  /* Alternative Protocol (DNS/ICMP) Non couvert -> Détecté via NDR/DNS logs */
+
+    /* Command & Control (TA0011) – NDR + DNS analytics + CTI */
+    {"techniqueID": "T1071", "color": "#FFA500"},  /* reste Détecté (application-layer) */
+    {"techniqueID": "T1095", "color": "#FFA500"},  /* Non-app-layer: Non couvert -> Détecté (NDR/DNS) */
+    {"techniqueID": "T1090", "color": "#FFA500"},  /* Proxy: Non couvert -> Détecté (NDR/proxy) */
+    {"techniqueID": "T1102", "color": "#2ECC71"},  /* Web Service: Mitigée -> Bloqué (DLP+policies réseau) */
+
+    /* Impact (TA0040) – S1 prevention + Veeam immuable + BitLocker/USB généralisés */
+    {"techniqueID": "T1486", "color": "#2ECC71"}   /* Mitigée -> Bloqué (ransomware stoppé + restauration) */
   ],
-  "tactic_controls": {
-    "TA0043": {
-      "color": "#FF69B4"
-    }
-  },
-  "gradient": {
-    "colors": [
-      "#ffffff",
-      "#ff69b4"
-    ],
-    "minValue": 0,
-    "maxValue": 1
-  },
   "legendItems": [
-    {
-      "label": "Reconnaissance (TA0043)",
-      "color": "#FF69B4"
-    }
+    {"label": "Bloqué", "color": "#2ECC71"},
+    {"label": "Détecté", "color": "#FFA500"},
+    {"label": "Mitigée", "color": "#FFD700"},
+    {"label": "Non couvert", "color": "#FF0000"}
   ]
 }
